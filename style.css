@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com');
+
+body {
+  margin: 0;
+}
+
+/****************   Nav Section **********************/
+nav {
+  background-color: #220202;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Tangerine', serif;
+  font-size: 15px;
+  color: white;
+}
+
+nav a {
+  color: #8b0000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  background-color: #220202;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #820203;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Google Sans', sans-serif;
+  color: white;
+}
+
+header img {
+  border: 4px solid;
+  border-radius: 10px;
+}
+
+.address {
+  font-family: 'Google Sans', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  margin: 20px;
+}
+
+.tagline {
+  font-family: 'Google Sans', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  margin: 20px;
+
+}
+
+/************* Sections ********************/
+hr {
+  height: 1px;
+  color: white;
+  background: white;
+  font-size: 0;
+  border: 0;
+}
+
+section h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #730101;
+  border-top: 2px solid #8b0000;
+  border-bottom: 2px solid #8b0000;
+  padding-bottom: 5px;
+}
+
+section h3 {
+  font-family: 'Roboto Mono', sans-serif;
+  color: #757576;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px
+}
+
+section dt {
+  font-weight: bold;
+  text-align: left;
+}
+
+section ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+section a {
+  color: #8b0000;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.card {
+  background-color: #8f5a65;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+footer a {
+  color: #8b0000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  resize: vertical;
+}
